@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add name & description of the page -->
+    <meta name="author" content="Jennifer Magpantay" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Front End BootCamp - Practical work" />
+    <!--to avoid favicon.ico issues-->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <!-- add reset.css before any other style file-->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <!-- add index.css -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>DEVELOPERS SKILLS DB</h1>
+    </header>
+
+    <div class="container">
+        <div class="container--sm">
+            <label for="inputName">Searh by Name</label>
+            <input id="inputName" type="text" autofocus />
+            <!-- placeholder="Digit here something"  -->
+            <button id="btn--search">SEARCH</button>
+            <button id="btn--clear">CLEAR</button>
+        </div>
+        <div class="container--sm">
+            <label>Tech skills</label>
+            <div class="options__container">
+                <!-- checkbox -->
+                <input type="checkbox" id="java" name="checkboxGroup" value="Java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="javascript" name="checkboxGroup" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="python" name="checkboxGroup" value="Python">
+                <label for="python">Python</label>
+                <!-- radio buttons -->
+                <input type="radio" id="radioAnd" name="radioGroup" value="And" >
+                <label for=" and">AND</label>
+                <input type="radio" id="radioOr" name="radioGroup" value="Or">
+                <label for="or">OR</label>
+                <!-- <input type="radio" id="radioNo" name="radioGroup" value="No" checked>
+                <label for="No">No filters</label> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h2><span id="header--result">0 </span> RESULTS FOUND</h2>
+        </header>
+    </div>
+    <div id="root" class="root">
+        <!-- generate a card and dev content to be displayed -->
+    </div>
+
+    <!-- scripts -->
+    <script src="./js/start.js"></script>
+
+</body>
+
+</html>

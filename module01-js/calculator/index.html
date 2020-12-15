@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add name & description of the page -->
+    <meta name="author" content="Jennifer Magpantay" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Front End BootCamp - Practical work" />
+    <!-- add reset.css before any other style file-->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <!-- add index.css -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <!-- add google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mix Calculator</h1>
+    </header>
+
+    <div class="container">
+        <!-- inputs for user type in the numbers -->
+        <label for="number--a">Number A</label>
+        <input type="number" id="number--a" value="0" oninput="start()" autofocus />
+
+        <label for="number--b">Number B</label>
+        <input type="number" id="number--b" value="0" oninput="start()" autofocus />
+        <button id="btn--calculate">CALCULATE</button>
+        <button id="btn--clear">CLEAR</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <label for="sum">Sum: A + B</label>
+            <input id="sum" readonly />
+        </div>
+        <div class="card">
+            <label for="sub--one">Subtraction: A - B</label>
+            <input id="sub--one" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="sub--two">Subtraction: B - A</label>
+            <input id="sub--two" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="mult">Multiplication: A * B</label>
+            <input id="mult" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="div--one">Divisiom: A / B</label>
+            <input id="div--one" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="div--two">Divisiom: B / A</label>
+            <input id="div--two" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="power--a">Power of A</label>
+            <input id="power--a" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="power--b">Power of B</label>
+            <input id="power--b" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="div--a">Divisor numbers of A</label>
+            <input id="div--a" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="div--b">Divisor numbers of B</label>
+            <input id="div--b" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="fact--a">Factorial: A</label>
+            <input id="fact--a" value="0" readonly />
+        </div>
+        <div class="card">
+            <label for="fact--b">Factorial: B</label>
+            <input id="fact--b" value="0" readonly />
+        </div>
+    </div>
+    <!-- js -->
+    <script src="js/start.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --black: #000000;
+  --blue: #192a56;
+  --white: #ffffff;
+  --lg-gray: #ecf0f1;
+  --dk-gray: #2c3e50;
+  --red: #c0392b;
+  --box-shadow-black: 0px 6px 13px -1px rgba(0, 0, 0, 0.33);
+}
+
+/* ---------- GLOBAL | ALPHABETIC ORDER ---------- */
+body {
+  width: 100%;
+  height: auto;
+  background-color: var(--lg-gray);
+  font-size: 1em;
+}
+
+button {
+  width: 48%;
+  height: auto;
+  padding: 10px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+label {
+  width: 100%;
+  color: gray;
+}
+
+img {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  padding-right: 1%;
+  margin: 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: auto;
+  padding: 12px 10px;
+  margin: 1% 0;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 4% 5% 2% 5%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---------- MAIN ---------- */
+.container,
+.root {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0 5%;
+  margin: 1% 0;
+}
+
+.container--sm {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: var(--white);
+}
+
+.options__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- ROOT ---------- */
+.root {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 0 5%;
+  margin: 1% 0;
+}
+
+.card {
+  display: flex;
+  flex: 0 1 32.3%;
+  align-items: center;
+  padding: 1%;
+  margin-bottom: 2%;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.card:not(:last-child) {
+  margin-right: 1%;
+}
+
+.card__container--content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  font-size: 0.88em;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (max-width: 800px) {
+  button {
+    width: 100%;
+    margin-bottom: 1%;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container--sm {
+    width: 100%;
+  }
+
+  .card {
+    flex: 0 1 49%;
+  }
+}
